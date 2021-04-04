@@ -32,7 +32,6 @@ class GoalsController < ApplicationController
     if @goal.update(goal_params)
       @status = true
     else
-      render :edit
       @status = false
     end
   end
